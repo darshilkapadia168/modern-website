@@ -1,88 +1,153 @@
-* {
-  font-family: "General Sans";
+@font-face {
+  font-family: 'General Sans';
+  src: url('./fonts/GeneralSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Tablet and Below */
-@media (max-width: 1024px) {
-  #heading h1 {
-    font-size: 12vw;
-  }
-  #heading #gap {
-    margin-left: 100px;
-  }
-  .blocktext h5,
-  #smallheading h5,
-  #herofooter a {
-    font-size: 2.5vw;
-  }
-  #textabout {
-    width: 100%;
-    padding: 0;
-  }
-  #about {
-    flex-direction: column;
-    padding: 10vw 5vw;
-    padding-left: 5vw;
-  }
-  #about img {
-    width: 200px;
-  }
-  #textabout p {
-    font-size: 2.5vw;
-  }
-  #footerright,
-  #footerleft {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  #footerright a {
-    font-size: 3vw;
-  }
-}
-
-/* Mobile (Below 768px) */
 @media (max-width: 768px) {
-  #heading h1 {
-    font-size: 12vw;
-    margin-left: 15px;
+  * {
+    font-family: 'General Sans', sans-serif;
+    box-sizing: border-box;
   }
 
-  .blocktext h5,
-  #smallheading h5,
-  #herofooter a,
-  #textabout p,
-  #subscribe h5 {
-    font-size: 3.5vw;
-    text-align: left;
+  body {
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
   }
 
-  #about {
+  /* Navigation */
+  #nav {
     flex-direction: column;
-    padding: 5vw 7vw;
-    gap: 40px;
-  }
-
-  #textabout {
-    width: 100%;
-  }
-
-  #footerleft h5,
-  #footerright a {
-    font-size: 3vw;
-  }
-
-  #footerright {
-    gap: 25px;
-    flex-wrap: wrap;
-  }
-
-  .elem h1 {
-    font-size: 10vw;
+    padding: 20px;
+    gap: 10px;
   }
 
   #nav a,
   #nav h4 {
-    font-size: 4.5vw;
+    font-size: 5vw;
+  }
+
+  /* Hero Section */
+  #heading h1 {
+    font-size: 14vw;
+    margin-left: 10px;
+  }
+
+  #heading #gap {
+    margin-left: 40px;
+  }
+
+  .blocktext {
+    align-items: flex-end;
+    line-height: 2.5;
+  }
+
+  .blocktext h5 {
+    font-size: 4vw;
+    text-align: right;
+  }
+
+  #smallheading {
+    margin-top: 40px;
+    padding-right: 20px;
+  }
+
+  #smallheading h5 {
+    font-size: 4vw;
+    text-align: right;
+  }
+
+  #herofooter {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  #herofooter a {
+    font-size: 4vw;
+  }
+
+  .circle i {
+    padding: 6px;
+  }
+
+  /* Projects Section */
+  #second {
+    padding-top: 80px;
+    height: auto;
+  }
+
+  .elem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5vw;
+  }
+
+  .elem h1 {
+    font-size: 12vw;
+  }
+
+  .elem h4 {
+    font-size: 5vw;
+    margin-top: 10px;
+  }
+
+  /* About Section */
+  #about {
+    flex-direction: column;
+    padding: 10vw 5vw;
+    text-align: center;
+  }
+
+  #about img {
+    width: 180px;
+  }
+
+  #textabout {
+    width: 100%;
+  }
+
+  #textabout p {
+    font-size: 4vw;
+    line-height: 1.7;
+  }
+
+  #textabout a {
+    font-size: 4vw;
+    padding: 2vw 6vw;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  /* Subscribe Section */
+  #subscribe {
+    padding: 20px;
+  }
+
+  #subscribe h5,
+  #subscribe h4 {
+    font-size: 4vw;
+  }
+
+  /* Footer Section */
+  #endfooter {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+  }
+
+  #footerleft h5,
+  #footerright a {
+    font-size: 3.5vw;
+  }
+
+  #footerright {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
   }
 }
